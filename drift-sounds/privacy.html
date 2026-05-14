@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DriftSounds — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0D1117;
+      color: #C9D1D9;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 1.75rem; color: #E6EDF3; margin-bottom: 0.25rem; }
+    .meta { font-size: 0.875rem; color: #6E7681; margin-bottom: 2rem; }
+    h2 { font-size: 1.1rem; color: #E6EDF3; margin: 2rem 0 0.5rem; }
+    p { margin-bottom: 1rem; }
+    ul { margin: 0 0 1rem 1.5rem; }
+    li { margin-bottom: 0.25rem; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; font-size: 0.9rem; }
+    th, td { text-align: left; padding: 0.5rem 0.75rem; border: 1px solid #30363D; }
+    th { background: #161B22; color: #E6EDF3; }
+    td code { font-family: monospace; font-size: 0.85rem; color: #7C8CFF; }
+    a { color: #7C8CFF; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .callout {
+      background: #161B22;
+      border-left: 3px solid #7C8CFF;
+      border-radius: 4px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #30363D; font-size: 0.875rem; color: #6E7681; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1>DriftSounds Privacy Policy</h1>
+    <p class="meta">Effective date: May 12, 2026 &nbsp;·&nbsp; Last updated: May 12, 2026</p>
+
+    <p>DriftSounds ("the app") is published by <strong>Headwind Studios</strong> ("we", "us"). This policy explains what data is collected when you use the app and how it is used.</p>
+
+    <h2>Short version</h2>
+    <div class="callout">
+      DriftSounds does not require an account, ask for your name or email, or track your activity inside the app. The only personal data that leaves your device is what Google AdMob and Google Play Billing collect on our behalf for advertising and to process the optional one-time premium purchase. We do not run our own analytics, we do not sell or share data, and the app works fully offline once installed.
+    </div>
+
+    <h2>Data we collect directly</h2>
+    <p><strong>None.</strong> All app data — your saved mixes, volume settings, sleep-timer defaults, theme preference, premium-unlock status — is stored only on your device using Android's standard local storage (Room and DataStore). It never leaves your device, and uninstalling the app deletes it.</p>
+
+    <h2>Data collected by third parties through the app</h2>
+
+    <h2>Google AdMob (advertising)</h2>
+    <p>Free-tier users see a single banner ad at the bottom of the home screen. To serve those ads, Google AdMob collects:</p>
+    <ul>
+      <li>Your device's advertising ID (a resettable identifier you control in Android Settings → Privacy → Ads)</li>
+      <li>IP address (used to infer approximate location at the country/region level)</li>
+      <li>Device information (model, OS version, language, screen size)</li>
+      <li>Interaction data with the ads themselves (impressions, clicks)</li>
+    </ul>
+    <p>This data is used by Google to serve and measure ads, and to provide personalized advertising. Personalized ads are enabled by default; you can opt out at any time via the consent prompt shown on first launch in regions that require one (EU, UK, Switzerland) or via Android Settings → Privacy → Ads → "Opt out of Ads Personalization."</p>
+    <p>
+      Google's full handling of this data is governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/ads" target="_blank">Google's Advertising Privacy Notice</a>.
+    </p>
+    <p>If you purchase the premium unlock ($4.99 one-time), all ads stop and AdMob is no longer initialized for your install. No further ad-related data is collected.</p>
+
+    <h2>Google Play Billing (premium purchase)</h2>
+    <p>If you choose to purchase the optional premium unlock, the transaction is handled entirely by <strong>Google Play Billing</strong>. We receive only an anonymous purchase token confirming that the unlock is owned by your Google account. We do not receive your name, email, payment method, or any other personal information.</p>
+    <p>Google's handling of purchase data is governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+
+    <h2>Data we explicitly do not collect</h2>
+    <ul>
+      <li>Names, emails, phone numbers</li>
+      <li>Account credentials (the app has no accounts)</li>
+      <li>Microphone or camera input</li>
+      <li>Contacts, calendar, or other on-device data outside our own app storage</li>
+      <li>Location (beyond the country-level inference AdMob makes from IP)</li>
+      <li>Health, fitness, or biometric data</li>
+      <li>Third-party analytics (we do not run Firebase Analytics, Mixpanel, Segment, or any comparable tool)</li>
+    </ul>
+
+    <h2>Permissions the app requests</h2>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>INTERNET</code></td><td>Required for AdMob to serve banner ads to free-tier users</td></tr>
+        <tr><td><code>FOREGROUND_SERVICE</code> and <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td><td>Required to keep sounds playing when the app is in the background or the screen is off</td></tr>
+        <tr><td><code>POST_NOTIFICATIONS</code> (Android 13+)</td><td>Required to show the media notification (play/pause/stop controls) while sound is playing</td></tr>
+        <tr><td><code>com.android.vending.BILLING</code></td><td>Required for Google Play Billing to process the optional premium purchase</td></tr>
+      </tbody>
+    </table>
+    <p>The app does <strong>not</strong> request microphone, camera, location, contacts, or storage permissions.</p>
+
+    <h2>Children's privacy</h2>
+    <p>DriftSounds is not directed at children under 13. We do not knowingly collect personal information from children. Because the app does not collect personal information directly, and because the data Google AdMob and Google Play collect is governed by Google's own policies and Family-Friendly programs (where applicable), parents who allow their children to use ad-supported apps should review Google's policies linked above.</p>
+    <p>If you believe a child has used the app and you would like Google to remove any associated advertising data, you can reset or delete the device's advertising ID via Android Settings → Privacy → Ads.</p>
+
+    <h2>Your rights</h2>
+    <p>Because we do not collect or store personal information on our own servers, the standard data-access, correction, and deletion rights under GDPR, CCPA, and similar laws apply primarily to the data Google holds. To exercise those rights, contact Google directly through their <a href="https://myaccount.google.com/privacy" target="_blank">privacy controls</a>.</p>
+    <p>To delete all data the app stores on your device, simply uninstall DriftSounds. This removes saved mixes, preferences, and the cached premium-unlock state. (Your purchase remains tied to your Google account and can be restored at any time by reinstalling and tapping "Restore Purchase" in Settings.)</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we make material changes to this policy, we will update the "Last updated" date above and, where appropriate, surface a notice inside the app. Continued use of DriftSounds after a change constitutes acceptance of the revised policy.</p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions, requests, or concerns:<br />
+      <strong>Email:</strong> <a href="mailto:headwind.studios.app@gmail.com">headwind.studios.app@gmail.com</a><br />
+      <strong>Publisher:</strong> Headwind Studios
+    </p>
+
+    <footer>&copy; 2026 Headwind Studios. All rights reserved.</footer>
+
+  </div>
+</body>
+</html>
